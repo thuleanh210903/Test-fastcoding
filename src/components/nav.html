@@ -1,0 +1,51 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <div class="navbar-content">
+      <a href="javascript:void(0)" class="navbar-logo">
+        <span class="navbar-logo-first">Bis</span>
+        <span class="navbar-logo-second">Lite</span>
+      </a>
+
+      <!-- Hamburger Menu Icon -->
+      <div class="navbar-menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!-- Navbar list (desktop) -->
+      <ul class="navbar-list">
+        <li class="navbar-list-item list-item"><a>HOME</a></li>
+        <li class="navbar-list-item list-item"><a>ABOUT US</a></li>
+        <li class="navbar-list-item list-item dropdown">
+          <a>SERVICES</a>
+          <i class="fas fa-chevron-down fa-xs"></i>
+          <ul class="dropdown-menu">
+            <li class="dropdown-menu_item"><a href="#">Web Design</a></li>
+            <li class="dropdown-menu_item"><a href="#">Wordpress Design</a></li>
+            <li class="dropdown-menu_item">
+              <a href="#">Mobile App Development</a>
+            </li>
+            <li class="dropdown-menu_item">
+              <a href="#">Internet Marketing</a>
+            </li>
+            <li class="dropdown-menu_item contact-us">
+              <a href="#">Social Media Management</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar-list-item list-item"><a>PORTFOLIO</a></li>
+        <li class="navbar-list-item list-item"><a>BLOG</a></li>
+        <li class="navbar-list-item list-item"><a>CONTACT US</a></li>
+      </ul>
+
+      <!-- Mobile navbar list (hidden by default) -->
+      <ul class="navbar-mobile-menu" id="mobileMenu">
+        <li><a>HOME</a></li>
+        <li><a>ABOUT US</a></li>
+        <li><a>SERVICES</a></li>
+        <li><a>PORTFOLIO</a></li>
+        <li><a>BLOG</a></li>
+        <li><a>CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
