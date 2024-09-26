@@ -1,0 +1,36 @@
+@use "../../abstracts/" as *;
+
+.container-feedback {
+  width: 100%;
+}
+
+.feedback {
+  padding: 64px 0 68px;
+  text-align: center;
+
+  &-cards {
+    @include flex($align: flex-start, $justify: space-between);
+    padding: 76px 0 108px;
+  }
+
+  &-dots {
+    @include flex($align: center, $justify: center);
+  }
+
+  &-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid $text-color;
+    cursor: pointer;
+    margin-left: 16px;
+
+    @include tablet {
+      width: 8px;
+      height: 8px;
+    }
+    &_active {
+      background-color: $text-color;
+    }
+  }
+}

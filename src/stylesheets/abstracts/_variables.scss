@@ -1,0 +1,22 @@
+@use "functions" as *;
+
+// Font family
+$primary-font: Roboto;
+
+// Breakpoints
+$medium: 768px;
+$extra-lager: 1200px;
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-lager - 1px);
+
+
+
+// Colors
+$primary-color: #6dbfd4;
+$background-color: #e8ebf1;
+$secondary-color: #2596be;
+$text-color: #4d4e50;
+$main-spacing: pxToRem(2);
+
+
+
