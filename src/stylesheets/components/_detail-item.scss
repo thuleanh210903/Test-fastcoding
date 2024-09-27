@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+
+.icon-detail {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.detail-sec {
+    background-color: $background-color;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.detail-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.detail-item {
+  @include flex($direction: column); 
+  gap: 8px;
+
+  &_head {
+    overflow: visible;
+    @include flex($align: center); 
+    gap: 23px;
+
+    h2 {
+      font-size: 15px;
+      color: $title-color;
+    }
+  }
+
+  &_desc {
+    color: $secondary-text;
+    font-size: 13px;
+  }
+
+  &_read {
+    margin-top: 20px;
+    color: $secondary-color;
+    @include flex();
+    gap: 10px;
+  }
+}
