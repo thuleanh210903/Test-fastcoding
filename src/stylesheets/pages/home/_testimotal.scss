@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use "../../abstracts/" as *;
 .testimotal-client-content {
     @include flex($direction:row, $wrap: wrap, $justify: space-between);
     gap: 20px;

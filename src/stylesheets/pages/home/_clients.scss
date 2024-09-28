@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use "../../abstracts/" as *;
 .clients {
   @include flex($direction: column);
   gap: 20px;

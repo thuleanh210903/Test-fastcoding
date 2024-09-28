@@ -7,6 +7,7 @@
 .footer-content {
   @include flex($direction: column);
   padding-top: 20px;
+  padding-bottom: 40px;
 
   @include tablet {
     padding: 20px 20px;
@@ -27,13 +28,18 @@ span {
     &--desc {
       max-width: 250px;
       padding-top: 20px;
+      color: $text-color;
     }
 
     &--list {
+      margin-top:10px;
       li {
         margin-top: 5px;
+        color: $text-color;
       }
     }
+
+    
 
     &--social {
       max-width: 53px;
@@ -42,12 +48,21 @@ span {
 
     &--socials {
       @include flex($direction: column);
+      margin-top:20px;
+
       &--top,
       &--bottom {
         @include flex($direction: row, $justify: space-between);
         gap: 15px;
       }
     }
+
+
+    &--contact {
+      margin-top:20px;
+
+    }
+   
   }
 }
 
@@ -67,7 +82,6 @@ span {
   }
 }
 
-
-.main {
+.name {
   font-weight: 600;
 }

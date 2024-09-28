@@ -18,15 +18,10 @@
         overflow: visible;
         @include flex($align: center);
         gap: 23px;
-
-        h2 {
-          font-size: 15px;
-          color: $title-color;
-        }
       }
 
       &_desc {
-        color: $secondary-text;
+        color: $text-color;
         font-size: 13px;
       }
 

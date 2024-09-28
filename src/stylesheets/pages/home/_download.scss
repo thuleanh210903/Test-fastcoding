@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use "../../abstracts/" as *;
 
 .download-sec {
   margin-top: 30px;
@@ -8,7 +8,7 @@
   @include flex($wrap: wrap, $justify: space-between, $align: center);
   padding: 35px 30px;
 
-  border: 1px solid $border-color;
+  border: 1px solid $third-color;
   background-color: #e8fcfe;
   &_desc {
     width: 60%;
@@ -29,7 +29,7 @@
     @include flex($align: center);
     gap: 20px;
     padding: 18px 20px;
-    background-color: #81e4ed;
+    background-color: $third-color;
     border-radius: 7px;
 
     span {
