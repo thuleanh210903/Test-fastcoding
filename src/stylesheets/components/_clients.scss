@@ -18,14 +18,17 @@
   }
 
   &-logo {
-    @include flex($direction: column);
-
+    @include flex($direction: column, $wrap: wrap);
     &_images {
       max-width: 160px;
       max-height: 101px;
-
       @include tablet {
-        max-width: 160px;
+        max-width: 120px;
+        height: 101px;
+      }
+
+      @include mobile {
+        max-width: 100px;
         height: 101px;
       }
     }

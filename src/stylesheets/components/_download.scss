@@ -2,39 +2,51 @@
 
 .download-sec {
   margin-top: 30px;
-
 }
 
 .download-content {
-    @include flex($wrap: wrap, $justify: space-between, $align: center);
-    padding: 35px 30px;
+  @include flex($wrap: wrap, $justify: space-between, $align: center);
+  padding: 35px 30px;
 
-    border: 1px solid $border-color;
-    background-color: #E8FCFE;
-    &_desc {
-        width: 60%;
+  border: 1px solid $border-color;
+  background-color: #e8fcfe;
+  &_desc {
+    width: 60%;
 
-        @include tablet {
-            width: 90%;
-            text-align: center;
-        }
+    @include tablet {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  @include tablet {
+    @include flex($direction: column, $align: center);
+    gap: 20px;
+    padding: 11px 15px;
+  }
+
+  &_button {
+    @include flex($align: center);
+    gap: 20px;
+    padding: 18px 20px;
+    background-color: #81e4ed;
+    border-radius: 7px;
+
+    span {
+      font-weight: 900;
+
+      @include tablet {
+        font-size: 11px;
+      }
     }
 
     @include tablet {
-        @include flex($direction:column, $align: center);
-        gap: 20px;
-        padding: 11px 15px;
-    }
+      gap: 6px;
+      padding: 11px 14px;
 
-    &_button {
-        @include flex($align: center);
-        gap: 20px;
-        padding: 18px 20px;
-        background-color: #81E4ED;
-        border-radius: 7px;
-
-        span {
-            font-weight: 900;
-        }
+      img {
+        max-width: 20px;
+      }
     }
+  }
 }

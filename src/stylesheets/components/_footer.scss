@@ -2,9 +2,15 @@
 
 .footer {
   margin-top: 40px;
+  background-color: $background-color;
 }
 .footer-content {
   @include flex($direction: column);
+  padding-top: 20px;
+
+  @include tablet {
+    padding: 20px 20px;
+  }
 
   gap: 30px;
 }
@@ -39,7 +45,7 @@ span {
       &--top,
       &--bottom {
         @include flex($direction: row, $justify: space-between);
-        gap: 15px; // Thêm khoảng cách giữa các icon (có thể tùy chỉnh)
+        gap: 15px;
       }
     }
   }
@@ -47,4 +53,21 @@ span {
 
 .footer-bottom {
   @include flex($direction: row, $wrap: wrap, $justify: space-between);
+
+  &_item {
+    &--images {
+      @include tablet {
+        max-width: 100px;
+      }
+
+      @include mobile {
+        max-width: 70px;
+      }
+    }
+  }
+}
+
+
+.main {
+  font-weight: 600;
 }

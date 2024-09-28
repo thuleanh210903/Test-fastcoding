@@ -10,7 +10,7 @@
 
 .hero-content {
   @include flex($direction: column, $justify: center);
-  gap: 30px;
+  gap: 15px;
   padding-top:20px;
   padding-bottom: 20px;
 
@@ -22,8 +22,6 @@
   }
 
   &_banner {
-     
-    max-width: 1000px;
     max-height: 440px;
 
   }
@@ -44,7 +42,6 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 1px solid #626262;
     background-color: #626262;
     cursor: pointer;
     margin-left: 16px;
