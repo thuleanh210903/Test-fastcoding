@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+.testimotal-client-content {
+    @include flex($direction:row, $wrap: wrap, $justify: space-between);
+    gap: 20px;
+    margin-top: 10px;
+
+    @include tablet {
+        @include flex($direction: column, $justify: center);
+    };
+}
+
+.testimotal {
+    max-width: 50%;
+    @include tablet {
+        max-width: 100%;
+    };
+    @include flex($direction: column);
+    gap: 10px;
+
+    &-head {
+        @include flex();
+        gap: 10px;
+         
+        &_icon {
+            max-width: 24px;
+            max-height: 23px;
+        }
+        &_title {
+            font-weight: 900;
+
+        }
+    }
+
+    &-name {
+        padding-top: 20px;
+        font-style: italic;
+        font-weight: 600;
+    }
+}

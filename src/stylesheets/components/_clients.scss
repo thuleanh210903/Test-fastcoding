@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+.clients {
+  @include flex($direction: column);
+  gap: 20px;
+
+  &-head {
+    @include flex($direction: row);
+    gap: 10px;
+
+    &_icon {
+      max-width: 24px;
+      max-height: 20px;
+    }
+
+    &_title {
+      font-weight: 900;
+    }
+  }
+
+  &-logo {
+    @include flex($direction: column);
+
+    &_images {
+      max-width: 160px;
+      max-height: 101px;
+
+      @include tablet {
+        max-width: 160px;
+        height: 101px;
+      }
+    }
+
+    @include tablet {
+      @include flex($direction: column, $align: center);
+    }
+  }
+}
