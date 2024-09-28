@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.footer {
+  margin-top: 40px;
+}
+.footer-content {
+  @include flex($direction: column);
+
+  gap: 30px;
+}
+
+span {
+  font-weight: 600;
+  font-size: 15px;
+}
+.footer-top {
+  @include flex($direction: row, $justify: space-between, $wrap: wrap);
+  gap: 10px;
+
+  &_item {
+    &--desc {
+      max-width: 250px;
+      padding-top: 20px;
+    }
+
+    &--list {
+      li {
+        margin-top: 5px;
+      }
+    }
+
+    &--social {
+      max-width: 53px;
+      max-height: 51px;
+    }
+
+    &--socials {
+      @include flex($direction: column);
+      &--top,
+      &--bottom {
+        @include flex($direction: row, $justify: space-between);
+        gap: 15px; // Thêm khoảng cách giữa các icon (có thể tùy chỉnh)
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  @include flex($direction: row, $wrap: wrap, $justify: space-between);
+}
